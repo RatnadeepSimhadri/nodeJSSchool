@@ -12,11 +12,11 @@ export const getProducts = async (req, res) => {
             id: req.user.id
         }, 
         include: {
-            Product: true
+            products: true
         }
     }); 
 
-    res.json({data: user.Product})
+    res.json({data: user.products})
 
 }
 
